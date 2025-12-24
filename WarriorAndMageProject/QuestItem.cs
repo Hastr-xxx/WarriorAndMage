@@ -8,7 +8,7 @@ namespace WarriorAndMageProject
 {
     internal class QuestItem : Item
     {
-        public QuestItem(int maxStack, string name, string description) : base(maxStack, name, description)
+        public QuestItem(int maxStack, string name, string description, int strength, int intelligence, int endurance) : base(maxStack, name, description, strength, intelligence, endurance)
         {
         }
     }

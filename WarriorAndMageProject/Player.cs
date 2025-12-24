@@ -16,6 +16,10 @@ namespace WarriorAndMageProject
 
         private Inventory inventory;
 
+        public int Endurance
+        {
+            get { return endurance; }
+        }
         public int PlayerLevel
         {
             get

@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace WarriorAndMageProject
 {
-    internal class Item
+    public class Item
     {
         protected readonly int maxStack;
 
         protected readonly string name;
         protected readonly string description;
+
+        protected int strength;
+        protected int intelligence;
+        protected int endurance;
 
         public int MaxStack
         {
@@ -37,11 +41,39 @@ namespace WarriorAndMageProject
             }
         }
 
-        public Item(int maxStack, string name, string description)
+        public int Strength
+        {
+            get
+            {
+                return strength;
+            }
+        }
+
+        public int Intelligence
+        {
+            get
+            {
+                return intelligence;
+            }
+        }
+
+        public int Endurance
+        {
+            get
+            {
+                return endurance;
+            }
+        }
+
+
+        public Item(int maxStack, string name, string description, int strength, int intelligence, int endurance)
         {
             this.maxStack = maxStack;
             this.name = name;
             this.description = description;
+            this.strength = strength;
+            this.intelligence = intelligence;
+            this.endurance = endurance;
         }
     }
 }
